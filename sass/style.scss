@@ -1,0 +1,102 @@
+$font: 'Roboto Condensed', sans-serif;
+$teal: #89C9B2;
+$purple: #B1ABD4;
+$bg: #f0f0f0;
+
+body {
+	margin: auto;
+	font-family: $font;
+	color: #333;
+    font-size: 24px;
+    font-weight: 300;
+    background: $bg;
+}
+a {
+    background: #fff;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 300;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font;
+}
+.page-heading {
+    margin: 3.5rem auto -27px auto;
+    text-align: center;
+    font-size: 7rem;
+    span {
+        font-weight: 300;
+    }
+}
+span.title {
+    color: #fff;
+    font-size: 8rem;
+    display: block;
+    padding-top: 182px;
+    position: absolute;
+    transition: .5s;
+}
+a.art {
+    text-decoration: none;
+    display: block;
+    overflow: hidden;
+
+    div.art {
+        height: 300px;
+        background: $teal;
+
+        &:hover span.title {
+            left: 40%;
+        }
+        span.title {
+            left: 50%;
+            font-weight: 700;
+        }
+        img {
+            height: 300px;
+            width: auto;
+            border: 0;
+            opacity: .6;
+            float: left;
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+}
+a.code {
+    overflow: hidden;
+    text-decoration: none;
+    display: block;
+    div.code {
+        height: 300px;
+        background: $purple;
+        &:hover span.title {
+            right: 60%;
+        }
+        span.title {
+            right: 50%;
+            font-weight: 300;
+        }
+    }
+}
+.feature-wrapper {
+    .feature {
+        width: 50%;
+        height: 600px;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+.ribbon {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 123px;
+    height: 200px;
+    a img {
+        height: 200px;
+        width: auto;
+    }
+}

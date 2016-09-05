@@ -1,0 +1,13 @@
+!!!
+%html
+    {% include header.html %}
+    %body
+        %div.wrapper
+            {% include title.html %}
+            %a.art(href="/ink")
+                %div.art
+                    {% for post in site.categories.art %}
+                         %img(src="{{ post.imgsrc }}")
+                    {% endfor %}
+            %a.code(href="/code")
+                %div.code
