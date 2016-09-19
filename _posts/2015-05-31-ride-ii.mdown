@@ -1,0 +1,7 @@
+---
+layout:     post
+title:      "Ride ii"
+date:       2015-05-31
+categories: art
+imgsrc:     http://67.media.tumblr.com/92cb3a251ccd206ac5a5823956b69e4b/tumblr_nq40x5uJlm1tw0twyo1_1280.png
+---

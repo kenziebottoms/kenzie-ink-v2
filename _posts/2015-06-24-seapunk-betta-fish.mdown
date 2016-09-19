@@ -1,0 +1,7 @@
+---
+layout:     post
+title:      "Seapunk betta fish"
+date:       2015-06-24
+categories: art
+imgsrc:     http://65.media.tumblr.com/0680ec4e6bb4a951f3fb02f7fde7a12b/tumblr_nqh2hmaOMb1tw0twyo1_r1_1280.png
+---

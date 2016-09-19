@@ -1,7 +1,0 @@
----
-layout: post
-title:  "Awakening"
-date:   2016-09-02 18:30:09 -0500
-categories: art
-imgsrc:     http://i.imgur.com/pshSeRf.png
----

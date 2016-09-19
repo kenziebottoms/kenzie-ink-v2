@@ -9,18 +9,77 @@ body {
 a {
   background: #fff;
   text-decoration: none;
-  color: inherit;
-  font-weight: 300; }
+  color: inherit; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto Condensed", sans-serif; }
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold; }
+
+canvas {
+  height: 500px;
+  width: 600px;
+  background: #fff;
+  margin: 50px 0; }
+
+.clearfix {
+  clear: both; }
 
 .page-heading {
-  margin: 3.5rem auto -27px auto;
+  margin: 0 auto;
   text-align: center;
-  font-size: 7rem; }
+  font-size: 7rem;
+  width: 100%;
+  position: absolute;
+  z-index: 300;
+  left: 0;
+  top: 56px;
+  transition: .25s;
+  animation-duration: 1s;
+  animation-fill-mode: both; }
+  @media screen and (min-width: 1420px) {
+    .page-heading.left {
+      width: 50%;
+      left: 0;
+      position: fixed; } }
+  @media screen and (min-width: 1420px) {
+    .page-heading.right {
+      width: 50%;
+      left: 50%; } }
+  @media screen and (min-width: 1420px) {
+    .page-heading.center {
+      width: 100%;
+      left: 0; } }
+  .page-heading a {
+    background: transparent; }
   .page-heading span {
-    font-weight: 300; }
+    font-weight: 300 !important; }
+
+#menu {
+  width: 100%;
+  margin-top: -47px;
+  background: #fff;
+  z-index: 300;
+  position: absolute;
+  list-style-type: none;
+  font-size: 2.5rem;
+  padding-left: 0;
+  text-align: center; }
+  @media screen and (min-width: 1420px) {
+    #menu {
+      width: 50%;
+      margin-top: 113px; } }
+  #menu li {
+    display: inline-block;
+    margin: 0 20px; }
+  #menu a {
+    background: transparent; }
+  #menu.art {
+    background: #89C9B2; }
+    @media screen and (min-width: 1420px) {
+      #menu.art {
+        left: 50%; } }
+  #menu.code {
+    background: #B1ABD4; }
 
 span.title {
   color: #fff;
@@ -33,50 +92,152 @@ span.title {
 a.art {
   text-decoration: none;
   display: block;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 300px;
+  margin-top: 160px; }
+  a.art span {
+    position: absolute;
+    right: 4rem;
+    z-index: 300;
+    font-size: 12rem;
+    color: #fff;
+    font-weight: 100;
+    padding-top: 1.8rem; }
   a.art div.art {
+    width: 120%;
     height: 300px;
     background: #89C9B2; }
+    a.art div.art span {
+      position: absolute;
+      z-index: 300;
+      font-size: 12rem;
+      color: #fff;
+      font-weight: 100;
+      padding-top: 1.8rem;
+      padding-left: 4rem; }
     a.art div.art:hover span.title {
       left: 40%; }
     a.art div.art span.title {
       left: 50%;
       font-weight: 700; }
-    a.art div.art img {
+    a.art div.art div {
       height: 300px;
-      width: auto;
+      transition: .25s;
+      width: 15%;
       border: 0;
-      opacity: .6;
-      float: left; }
-      a.art div.art img:hover {
-        opacity: .8; }
+      opacity: .4;
+      float: left;
+      background-size: 250% auto;
+      background-position: 40% 40%; }
+      a.art div.art div:hover {
+        opacity: .6; }
 
 a.code {
-  overflow: hidden;
   text-decoration: none;
-  display: block; }
+  display: block;
+  overflow: hidden;
+  height: 300px; }
+  a.code span {
+    position: absolute;
+    z-index: 300;
+    font-size: 12rem;
+    color: #fff;
+    font-weight: 100;
+    padding-top: 1.8rem;
+    padding-left: 4rem; }
   a.code div.code {
+    position: absolute;
+    width: 120%;
+    left: -20%;
     height: 300px;
     background: #B1ABD4; }
-    a.code div.code:hover span.title {
-      right: 60%; }
-    a.code div.code span.title {
-      right: 50%;
-      font-weight: 300; }
+    a.code div.code div {
+      height: 300px;
+      transition: .25s;
+      width: 15%;
+      border: 0;
+      opacity: .4;
+      float: right;
+      background-size: 250% auto;
+      background-position: 40% 40%; }
+      a.code div.code div:hover {
+        opacity: .6; }
 
-.feature-wrapper .feature {
-  width: 50%;
-  height: 600px;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: center; }
+.feature-wrapper {
+  width: 100%;
+  position: static;
+  margin-bottom: 3rem; }
+  @media screen and (min-width: 1420px) {
+    .feature-wrapper {
+      width: 50%;
+      position: absolute;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1420px) {
+    .feature-wrapper.art {
+      position: fixed; } }
+  .feature-wrapper .feature {
+    height: auto;
+    margin-top: 207px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center; }
+    @media screen and (min-width: 1420px) {
+      .feature-wrapper .feature {
+        margin-top: 160px;
+        height: 600px; } }
+    .feature-wrapper .feature.art {
+      height: 600px; }
+    .feature-wrapper .feature.code {
+      padding: 0 50px; }
+    .feature-wrapper .feature h2 {
+      display: none; }
+    .feature-wrapper .feature h2.post-title {
+      display: block; }
+    .feature-wrapper .feature #dragon {
+      margin: 0; }
+  .feature-wrapper p {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center; }
+    .feature-wrapper p span {
+      font-weight: 700; }
+  .feature-wrapper .code.graphs {
+    padding: 3rem; }
+    .feature-wrapper .code.graphs > div {
+      margin: 1rem 0;
+      font-size: 2rem; }
+      .feature-wrapper .code.graphs > div > div {
+        text-align: center;
+        color: #fff;
+        background: #89C9B2; }
+        .feature-wrapper .code.graphs > div > div.bar1 {
+          width: 20%;
+          opacity: .2; }
+        .feature-wrapper .code.graphs > div > div.bar2 {
+          width: 40%;
+          opacity: .4; }
+        .feature-wrapper .code.graphs > div > div.bar3 {
+          width: 60%;
+          opacity: .6; }
+        .feature-wrapper .code.graphs > div > div.bar4 {
+          width: 80%;
+          opacity: .8; }
+        .feature-wrapper .code.graphs > div > div.bar5 {
+          width: 100%;
+          opacity: 1; }
 
 .ribbon {
-  width: 50%;
-  position: absolute;
+  position: static;
+  width: 100%;
   left: 50%;
-  top: 123px;
-  height: 200px; }
-  .ribbon a img {
+  top: 160px; }
+  @media screen and (min-width: 1420px) {
+    .ribbon {
+      width: 50%;
+      position: absolute; } }
+  .ribbon a div {
     height: 200px;
-    width: auto; }
+    width: 25%;
+    float: left;
+    background-size: 250% auto;
+    background-position: 40% 40%; }

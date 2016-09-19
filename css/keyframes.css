@@ -1,0 +1,31 @@
+@keyframes centerToLeft {
+  0% {
+    with: 100%;
+    left: 0; }
+  100% {
+    width: 50%;
+    left: 0; } }
+
+@keyframes centerToRight {
+  0% {
+    width: 100%;
+    left: 0; }
+  100% {
+    width: 50%;
+    left: 50%; } }
+
+@keyframes rightToCenter {
+  0% {
+    width: 100%;
+    left: 50%; }
+  100% {
+    width: 50%;
+    left: 25%; } }
+
+@keyframes leftToCenter {
+  0% {
+    width: 100%;
+    left: 0; }
+  100% {
+    width: 50%;
+    left: 25%; } }

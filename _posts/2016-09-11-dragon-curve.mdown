@@ -1,0 +1,14 @@
+---
+layout:     code-post
+title:      "Dragon curve"
+date:       2016-09-11
+categories: code
+imgsrc:     http://i.imgur.com/hNMvibo.png
+permalink:  /kenzie/dragon/
+---
+<div style="text-align: center">
+    <canvas id="dragon" width="600" height="500"></canvas>
+</div>
+<script type="text/javascript" src="/js/dragon.js"></script>
+<h2 class="post-title">Dragon curve</h2>
+I've written a program to draw the dragon curve before your eyes three times in Python, once in Racket, and now again in jCanvas.

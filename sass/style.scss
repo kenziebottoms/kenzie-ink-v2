@@ -15,17 +15,87 @@ a {
     background: #fff;
     text-decoration: none;
     color: inherit;
-    font-weight: 300;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: $font;
+    font-weight: bold;
+}
+canvas {
+    height: 500px;
+    width: 600px;
+    background: #fff;
+    margin: 50px 0;
+}
+.clearfix {
+    clear: both;
 }
 .page-heading {
-    margin: 3.5rem auto -27px auto;
+    margin: 0 auto;
     text-align: center;
     font-size: 7rem;
+    width: 100%;
+    position: absolute;
+    z-index: 300;
+    left: 0;
+    top: 56px;
+    transition: .25s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    &.left {
+        @media screen and (min-width:1420px) {        
+            width: 50%;
+            left: 0;
+            position: fixed;
+        }
+    }
+    &.right {
+        @media screen and (min-width:1420px) {        
+            width: 50%;
+            left: 50%;
+        }
+    }
+    &.center {
+        @media screen and (min-width:1420px) {   
+            width: 100%;
+            left: 0;
+        }
+    }
+    a {
+        background: transparent;
+    }
     span {
-        font-weight: 300;
+        font-weight: 300 !important;
+    }
+}
+#menu {
+    width: 100%;
+    margin-top: -47px;
+    @media screen and (min-width:1420px) {
+        width: 50%;
+        margin-top: 113px;
+    }
+    background: #fff;
+    z-index: 300;
+    position: absolute;
+    list-style-type: none;
+    font-size: 2.5rem;
+    padding-left: 0;
+    text-align: center;
+    li {
+        display: inline-block;
+        margin: 0 20px;
+    }
+    a {
+        background: transparent;
+    }
+    &.art {
+        @media screen and (min-width:1420px) {
+            left: 50%;
+        }
+        background: $teal;
+    }
+    &.code {
+        background: $purple;
     }
 }
 span.title {
@@ -40,10 +110,31 @@ a.art {
     text-decoration: none;
     display: block;
     overflow: hidden;
+    height: 300px;
+    margin-top: 160px;
 
+    span {
+        position: absolute;
+        right: 4rem;
+        z-index: 300;
+        font-size: 12rem;
+        color: #fff;
+        font-weight: 100;
+        padding-top: 1.8rem;
+    }
     div.art {
+        width: 120%;
         height: 300px;
         background: $teal;
+    span {
+        position: absolute;
+        z-index: 300;
+        font-size: 12rem;
+        color: #fff;
+        font-weight: 100;
+        padding-top: 1.8rem;
+        padding-left: 4rem;
+    }
 
         &:hover span.title {
             left: 40%;
@@ -52,51 +143,153 @@ a.art {
             left: 50%;
             font-weight: 700;
         }
-        img {
+        div {
             height: 300px;
-            width: auto;
+            transition: .25s;
+            width: 15%;
             border: 0;
-            opacity: .6;
+            opacity: .4;
             float: left;
+            background-size: 250% auto;
+            background-position: 40% 40%;
             &:hover {
-                opacity: .8;
+                opacity: .6;
             }
         }
     }
 }
 a.code {
-    overflow: hidden;
     text-decoration: none;
     display: block;
+    overflow: hidden;
+    height: 300px;
+    span {
+        position: absolute;
+        z-index: 300;
+        font-size: 12rem;
+        color: #fff;
+        font-weight: 100;
+        padding-top: 1.8rem;
+        padding-left: 4rem;
+    }
     div.code {
+        position: absolute;
+        width: 120%;
+        left: -20%;
         height: 300px;
         background: $purple;
-        &:hover span.title {
-            right: 60%;
-        }
-        span.title {
-            right: 50%;
-            font-weight: 300;
+        div {
+            height: 300px;
+            transition: .25s;
+            width: 15%;
+            border: 0;
+            opacity: .4;
+            float: right;
+            background-size: 250% auto;
+            background-position: 40% 40%;
+            &:hover {
+                opacity: .6;
+            }
         }
     }
 }
 .feature-wrapper {
-    .feature {
+    width: 100%;
+    position: static;
+    margin-bottom: 3rem;
+    @media screen and (min-width:1420px) {
         width: 50%;
-        height: 600px;
+        position: absolute;
+        margin-bottom: 0;
+    }
+    &.art {
+        @media screen and (min-width:1420px) {
+            position: fixed;
+        }
+    }
+    .feature {
+        height: auto;
+        margin-top: 207px;
+        @media screen and (min-width:1420px) {
+            margin-top: 160px;
+            height: 600px;
+        }
         background-size: auto 100%;
         background-repeat: no-repeat;
         background-position: center;
+        &.art {
+            height: 600px;
+        }
+        &.code {
+            padding: 0 50px;
+        }
+        h2 {
+            display: none;
+        }
+        h2.post-title {
+            display: block;
+        }
+        #dragon {
+            margin: 0;
+        }
+    }
+    p {
+        width: 80%;
+        margin: 20px auto;
+        text-align: center;
+        span {
+            font-weight: 700;
+        }
+    }
+    .code.graphs {
+        padding: 3rem;
+        > div {
+            margin: 1rem 0;
+            font-size: 2rem;
+            > div {
+                text-align: center;
+                color: #fff;
+                background: $teal; 
+                &.bar1 {
+                    width: 20%;
+                    opacity: .2;
+                }
+                &.bar2 {
+                    width: 40%;
+                    opacity: .4;
+                }
+                &.bar3 {
+                    width: 60%;
+                    opacity: .6;
+                }
+                &.bar4 {
+                    width: 80%;
+                    opacity: .8;
+                }
+                &.bar5 {
+                    width: 100%;
+                    opacity: 1;
+                }
+            }
+        }
     }
 }
 .ribbon {
-    width: 50%;
-    position: absolute;
+    position: static;
+    width: 100%;
+    @media screen and (min-width:1420px) {
+        width: 50%;
+        position: absolute;
+    }
     left: 50%;
-    top: 123px;
-    height: 200px;
-    a img {
-        height: 200px;
-        width: auto;
+    top: 160px;
+    a {
+        div {
+            height: 200px;
+            width: 25%;
+            float: left;
+            background-size: 250% auto;
+            background-position: 40% 40%;
+        }
     }
 }

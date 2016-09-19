@@ -1,0 +1,7 @@
+---
+layout:     post
+title:      "Dapple roan centaur"
+date:       2015-03-03
+categories: art
+imgsrc:     http://i.imgur.com/uNis9Q7h.png
+---

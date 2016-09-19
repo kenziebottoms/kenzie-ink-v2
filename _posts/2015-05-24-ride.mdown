@@ -1,0 +1,7 @@
+---
+layout:     post
+title:      "Ride"
+date:       2015-05-24
+categories: art
+imgsrc:     http://i.imgur.com/iu6kdR9h.jpg
+---
