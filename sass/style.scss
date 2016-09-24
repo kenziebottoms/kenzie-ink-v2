@@ -232,6 +232,19 @@ a.code {
         #dragon {
             margin: 0;
         }
+        .dragon {
+            text-align: center;
+            font-size: 2rem;
+            input[type=number] {
+                font: inherit;
+                padding: 2px 2px 2px 10px;
+                width: 50px;
+            }
+            input[type=number]::-webkit-inner-spin-button, 
+            input[type=number]::-webkit-outer-spin-button { 
+                opacity: 1;
+            }
+        }
     }
     p {
         width: 80%;

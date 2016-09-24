@@ -195,6 +195,16 @@ a.code {
       display: block; }
     .feature-wrapper .feature #dragon {
       margin: 0; }
+    .feature-wrapper .feature .dragon {
+      text-align: center;
+      font-size: 2rem; }
+      .feature-wrapper .feature .dragon input[type=number] {
+        font: inherit;
+        padding: 2px 2px 2px 10px;
+        width: 50px; }
+      .feature-wrapper .feature .dragon input[type=number]::-webkit-inner-spin-button,
+      .feature-wrapper .feature .dragon input[type=number]::-webkit-outer-spin-button {
+        opacity: 1; }
   .feature-wrapper p {
     width: 80%;
     margin: 20px auto;

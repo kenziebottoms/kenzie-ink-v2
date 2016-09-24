@@ -10,7 +10,12 @@ function initDragon() {
 
     $("#dragon").click(function() {
         $('#dragon').clearCanvas();
-        plot(iterate(13), 4);
+        plot(iterate($('.dragon input').attr("value")), 4);
+    });
+
+    $(".dragon input").on("change keyup paste click", function() {
+        $('#dragon').clearCanvas();
+        plot(iterate($('.dragon input').val()), 4);
     });
 
     function iterate(n) {
