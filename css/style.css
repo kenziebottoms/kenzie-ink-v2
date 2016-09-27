@@ -44,7 +44,8 @@ canvas {
   @media screen and (min-width: 1420px) {
     .page-heading.right {
       width: 50%;
-      left: 50%; } }
+      left: 50%;
+      position: fixed; } }
   @media screen and (min-width: 1420px) {
     .page-heading.center {
       width: 100%;
@@ -205,11 +206,51 @@ a.code {
       .feature-wrapper .feature .dragon input[type=number]::-webkit-inner-spin-button,
       .feature-wrapper .feature .dragon input[type=number]::-webkit-outer-spin-button {
         opacity: 1; }
-  .feature-wrapper p {
+    .feature-wrapper .feature .resume {
+      padding: 1rem 0 3rem 0; }
+      .feature-wrapper .feature .resume h3 {
+        background: #89C9B2;
+        color: #fff;
+        text-align: center;
+        font-weight: 100;
+        font-size: 2rem;
+        display: block; }
+      .feature-wrapper .feature .resume h4 span {
+        font-weight: 100; }
+      .feature-wrapper .feature .resume ul {
+        font-size: 1.3rem; }
+    .feature-wrapper .feature .nano-wrapper {
+      margin: auto;
+      width: 90%;
+      font-size: 2rem;
+      text-align: center; }
+      .feature-wrapper .feature .nano-wrapper input[type=number] {
+        font: inherit;
+        padding: 2px 2px 2px 10px;
+        width: 70px;
+        float: center; }
+      .feature-wrapper .feature .nano-wrapper input[type=number]::-webkit-inner-spin-button,
+      .feature-wrapper .feature .nano-wrapper input[type=number]::-webkit-outer-spin-button {
+        opacity: 1; }
+      .feature-wrapper .feature .nano-wrapper textarea#nano {
+        padding: 0;
+        width: 100%;
+        font-size: 1.2rem;
+        font-weight: 100;
+        font-family: "Roboto Mono", monospace;
+        border: none; }
+      .feature-wrapper .feature .nano-wrapper #progress-wrapper {
+        width: 100%;
+        margin: auto; }
+        .feature-wrapper .feature .nano-wrapper #progress-wrapper #progress-bar {
+          width: 1px;
+          height: 8px;
+          background: #B1ABD4; }
+  .feature-wrapper.art p {
     width: 80%;
     margin: 20px auto;
     text-align: center; }
-    .feature-wrapper p span {
+    .feature-wrapper.art p span {
       font-weight: 700; }
   .feature-wrapper .code.graphs {
     padding: 3rem; }
@@ -244,10 +285,18 @@ a.code {
   @media screen and (min-width: 1420px) {
     .ribbon {
       width: 50%;
-      position: absolute; } }
-  .ribbon a div {
+      position: absolute; }
+      .ribbon.code {
+        position: fixed; } }
+  .ribbon.art a div {
     height: 200px;
     width: 25%;
     float: left;
     background-size: 250% auto;
     background-position: 40% 40%; }
+  .ribbon.code a div {
+    height: 200px;
+    width: 25%;
+    float: left;
+    background-position: center;
+    background-size: cover; }

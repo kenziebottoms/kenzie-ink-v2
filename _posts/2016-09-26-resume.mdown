@@ -1,0 +1,71 @@
+---
+layout:     code-gallery
+title:      "Resum&eacute;"
+date:       2016-09-26
+categories: code
+imgsrc:     http://i.imgur.com/R3gEiev.png
+permalink:  /kenzie/resume/
+---
+<div class="resume">
+    <h2 class="post-title">Resum&eacute;</h2>
+    <h3>G/O Digital</h3>
+    <p class="date">
+        <strong>Sep 2016 &ndash; present</strong> Maintenance specialist
+        <br/>
+        <strong>Jan 2016 &ndash; Aug 2016</strong> Web dev associate
+    </p>
+    <ul>
+        <li>
+            Custom, responsive website development
+        </li>
+        <li>
+            Website maintenance and repair
+        </li>
+        <li>
+            Organization and facilitation of inter-server website migration
+        </li>
+    </ul>
+    <em>HTML, CSS/SCSS, Javascript/jQuery, PHP/MySQL, WordPress, ExpressionEngine</em>
+    
+    <h3>Acxiom Corporation</h3>
+    <p class="date">
+        <strong>Jul 2015 &ndash; Dec 2015</strong> Digital Content Specialist intern
+    </p>
+    <ul>
+        <li>
+            Email marketing campaigns
+        </li>
+    </ul>
+    <em>HTML, CSS, Javascript</em>
+    
+    <h3>Centre College IT Services</h3>
+    <p class="date">
+        <strong>Sep 2014 &ndash; Jan 2015</strong>
+    </p>
+    <ul>
+        <li>
+            Student dashboard features
+        </li>
+    </ul>
+    <em>C#</em>
+
+    <h3>Hereit.org</h3>
+    <p class="date">
+        <strong>Jun 2013 &ndash; May 2015</strong>
+    </p>
+    <ul>
+        <li>
+            HTML audio player
+        </li>
+        <li>
+            Repair and expansion of existing front-end and admin dashboard features
+        </li>
+        <li>
+            Implementation of a front-end redesign
+        </li>
+        <li>
+            Incorporation of e-Commerce
+        </li>
+    </ul>
+    <em>HTML/CSS, PHP, MySQL, Javascript/jQuery, Stripe e-Commerce</em>
+</div>

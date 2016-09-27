@@ -1,12 +1,13 @@
 $font: 'Roboto Condensed', sans-serif;
+$mono-font: 'Roboto Mono', monospace;
 $teal: #89C9B2;
 $purple: #B1ABD4;
 $bg: #f0f0f0;
 
 body {
-	margin: auto;
-	font-family: $font;
-	color: #333;
+    margin: auto;
+    font-family: $font;
+    color: #333;
     font-size: 24px;
     font-weight: 300;
     background: $bg;
@@ -52,6 +53,7 @@ canvas {
         @media screen and (min-width:1420px) {        
             width: 50%;
             left: 50%;
+            position: fixed;
         }
     }
     &.center {
@@ -245,8 +247,59 @@ a.code {
                 opacity: 1;
             }
         }
+        .resume {
+            padding: 1rem 0 3rem 0;
+            h3 {
+                background: $teal;
+                color: #fff;
+                text-align: center;
+                font-weight: 100;
+                font-size: 2rem;
+                display: block;
+            }        
+            h4 span {
+                font-weight: 100;
+            }
+            ul {
+                font-size: 1.3rem;
+            }
+        }
+        .nano-wrapper {
+            margin: auto;
+            width: 90%;
+            font-size: 2rem;
+            text-align: center;
+
+            input[type=number] {
+                font: inherit;
+                padding: 2px 2px 2px 10px;
+                width: 70px;
+                float: center;
+            }
+            input[type=number]::-webkit-inner-spin-button, 
+            input[type=number]::-webkit-outer-spin-button { 
+                opacity: 1;
+            }
+            textarea#nano {
+                padding: 0;
+                width: 100%;
+                font-size: 1.2rem;
+                font-weight: 100;
+                font-family: $mono-font;
+                border: none;
+            }
+            #progress-wrapper {
+                width: 100%;
+                margin: auto;
+                #progress-bar {
+                    width: 1px;
+                    height: 8px;
+                    background: $purple;
+                }
+            }
+        }
     }
-    p {
+    &.art p {
         width: 80%;
         margin: 20px auto;
         text-align: center;
@@ -293,16 +346,24 @@ a.code {
     @media screen and (min-width:1420px) {
         width: 50%;
         position: absolute;
+        &.code {
+            position: fixed;
+        }
     }
     left: 50%;
     top: 160px;
-    a {
-        div {
-            height: 200px;
-            width: 25%;
-            float: left;
-            background-size: 250% auto;
-            background-position: 40% 40%;
-        }
+    &.art a div {
+        height: 200px;
+        width: 25%;
+        float: left;
+        background-size: 250% auto;
+        background-position: 40% 40%;
+    }
+    &.code a div {
+        height: 200px;
+        width: 25%;
+        float: left;
+        background-position: center;
+        background-size: cover;
     }
 }

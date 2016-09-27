@@ -1,5 +1,5 @@
 ---
-layout:     code-post
+layout:     code-gallery
 title:      "Dragon curve"
 date:       2016-09-11
 categories: code

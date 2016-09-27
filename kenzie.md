@@ -1,5 +1,5 @@
 ---
-layout: code-post
+layout: code-gallery
 title: kenzie
 permalink: /kenzie/
 ---

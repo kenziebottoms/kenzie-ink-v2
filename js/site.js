@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
-    initGallery();
-    initDragon();
+    init();
 
     // SmoothState
     'use strict';
@@ -28,13 +27,22 @@ $(document).ready(function(){
                 $('.active').removeClass('active');
                 // Inject the new content
                 $container.html($newContent);
-                initGallery();
-                initDragon();
+                init();
             }
         }
     },
     smoothState = $("#wrapper").smoothState(options).data('smoothState');
 }); 
+
+function init() {
+    initGallery();
+    if (window.location.href.indexOf("dragon") >= 0) {
+        initDragon();
+    }
+    if (window.location.href.indexOf("nanobox") >= 0) {
+        initNano();
+    }
+}
 
 function initGallery() {
     $('.art.ribbon a').click(function(event) {
@@ -42,5 +50,11 @@ function initGallery() {
         $a = $(this);
         $('.feature').css('background-image', $a.children('div').css('background-image'));
         $('.feature-wrapper p').html('<span>'+$a.attr('date')+'</span> '+$a.attr('title'));
+    });
+}
+function initNano() {
+    $("textarea#nano").on("change keyup paste", function() {
+        var wordCount = $(this).val().split(' ').length;
+        $("#progress-bar").width(wordCount/$('input#goal').val()*$('#progress-wrapper').width());
     });
 }

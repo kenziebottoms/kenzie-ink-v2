@@ -6,4 +6,7 @@
             %h1.page-heading.right
                 {% include title.html %}
             {% include code-menu.html %}
-            {{ content }}
+            %div.feature-wrapper.code
+                %div.code.feature
+                    {{ content }}
+            {% include code-ribbon.html %}
