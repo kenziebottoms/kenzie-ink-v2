@@ -1,0 +1,58 @@
+---
+layout:     code-gallery
+title:      "Resources"
+date:       2016-08-26
+categories: code
+imgsrc:     http://i.imgur.com/AosvLWW.png
+permalink:  /kenzie/resources/
+---
+<div class="resources">
+    <h2 class="post-title">Resources</h2>
+    <h3>Fonts</h3>
+    <ul>
+        <li>
+            <a href="https://edgewebfonts.adobe.com/fonts" target="_blank">Adobe Edge Web Fonts</a>, free web fonts
+        </li>
+        <li>
+            <a href="http://www.dafont.com/" target="_blank">Dafont.com</a>, free font downloads
+        </li>
+        <li>
+            <a href="https://fonts.google.com/" target="blank">Google Fonts</a>, free web fonts
+        </li>
+        <li>
+            <a href="https://www.fontsquirrel.com/" target="blank">Font Squirrel</a>, commercially usable free font downloads
+        </li>
+        <li>
+            <a href="http://www.fonts2u.com/index.html" target="blank">Fonts2U</a>, free font downloads
+        </li>
+        <li>
+            <a href="http://www.losttype.com/" target="blank">LostType</a>, pay-what-you-can font downloads
+        </li>
+    </ul>
+    
+    <h3>Coding practice</h3>
+    <ul>
+        <li>
+            <a href="https://projecteuler.net/archives" target="blank">Project Euler</a>, math practice problems
+        </li>
+        <li>
+            <a href="https://www.codewars.com/" target="blank">CodeWars</a>, simple to complex practice problems
+        </li>
+        <li>
+            <a href="http://codekata.com/" target="blank">CodeKata</a>, theoretical practice
+        </li>
+    </ul>
+    
+    <h3>Tutorials</h3>
+    <ul>
+        <li>
+            <a href="http://tutorialzine.com/2013/08/learn-angularjs-5-examples/" target="blank">Learn AngularJS With These 5 Practical Examples</a>
+        </li>
+        <li>
+            <a href="https://css-tricks.com/" target="blank">CSS-Tricks</a>, HTML, CSS, and JavaScript workarounds
+        </li>
+        <li>
+            <a href="https://davidwalsh.name/" target="blank">David Walsh Blog</a>, for all things web dev, feat. JavaScript
+        </li>
+    </ul>
+</div>

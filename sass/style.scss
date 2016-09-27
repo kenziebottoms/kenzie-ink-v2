@@ -2,18 +2,20 @@ $font: 'Roboto Condensed', sans-serif;
 $mono-font: 'Roboto Mono', monospace;
 $teal: #89C9B2;
 $purple: #B1ABD4;
-$bg: #f0f0f0;
+$gray: #f0f0f0;
+$black: #333;
+$white: #fff;
 
 body {
     margin: auto;
     font-family: $font;
-    color: #333;
+    color: $black;
     font-size: 24px;
     font-weight: 300;
-    background: $bg;
+    background: $gray;
 }
 a {
-    background: #fff;
+    background: $white;
     text-decoration: none;
     color: inherit;
 }
@@ -24,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 canvas {
     height: 500px;
     width: 600px;
-    background: #fff;
+    background: $white;
     margin: 50px 0;
 }
 .clearfix {
@@ -76,7 +78,7 @@ canvas {
         width: 50%;
         margin-top: 113px;
     }
-    background: #fff;
+    background: $white;
     z-index: 300;
     position: absolute;
     list-style-type: none;
@@ -101,7 +103,7 @@ canvas {
     }
 }
 span.title {
-    color: #fff;
+    color: $white;
     font-size: 8rem;
     display: block;
     padding-top: 182px;
@@ -120,7 +122,7 @@ a.art {
         right: 4rem;
         z-index: 300;
         font-size: 12rem;
-        color: #fff;
+        color: $white;
         font-weight: 100;
         padding-top: 1.8rem;
     }
@@ -132,7 +134,7 @@ a.art {
         position: absolute;
         z-index: 300;
         font-size: 12rem;
-        color: #fff;
+        color: $white;
         font-weight: 100;
         padding-top: 1.8rem;
         padding-left: 4rem;
@@ -169,7 +171,7 @@ a.code {
         position: absolute;
         z-index: 300;
         font-size: 12rem;
-        color: #fff;
+        color: $white;
         font-weight: 100;
         padding-top: 1.8rem;
         padding-left: 4rem;
@@ -187,8 +189,8 @@ a.code {
             border: 0;
             opacity: .4;
             float: right;
-            background-size: 250% auto;
-            background-position: 40% 40%;
+            background-size: cover;
+            background-position: center;
             &:hover {
                 opacity: .6;
             }
@@ -247,11 +249,11 @@ a.code {
                 opacity: 1;
             }
         }
-        .resume {
+        .resume, .resources {
             padding: 1rem 0 3rem 0;
             h3 {
                 background: $teal;
-                color: #fff;
+                color: $white;
                 text-align: center;
                 font-weight: 100;
                 font-size: 2rem;
@@ -260,8 +262,10 @@ a.code {
             h4 span {
                 font-weight: 100;
             }
+        }
+        .resources {
             ul {
-                font-size: 1.3rem;
+                line-height: 1.4;
             }
         }
         .nano-wrapper {
@@ -314,7 +318,7 @@ a.code {
             font-size: 2rem;
             > div {
                 text-align: center;
-                color: #fff;
+                color: $white;
                 background: $teal; 
                 &.bar1 {
                     width: 20%;

@@ -25,7 +25,7 @@ permalink:  /kenzie/resume/
             Organization and facilitation of inter-server website migration
         </li>
     </ul>
-    <em>HTML, CSS/SCSS, Javascript/jQuery, PHP/MySQL, WordPress, ExpressionEngine</em>
+    <em>HTML, CSS/SCSS, JavaScript/jQuery, PHP/MySQL, WordPress, ExpressionEngine</em>
     
     <h3>Acxiom Corporation</h3>
     <p class="date">
@@ -36,7 +36,7 @@ permalink:  /kenzie/resume/
             Email marketing campaigns
         </li>
     </ul>
-    <em>HTML, CSS, Javascript</em>
+    <em>HTML, CSS, JavaScript</em>
     
     <h3>Centre College IT Services</h3>
     <p class="date">
@@ -67,5 +67,5 @@ permalink:  /kenzie/resume/
             Incorporation of e-Commerce
         </li>
     </ul>
-    <em>HTML/CSS, PHP, MySQL, Javascript/jQuery, Stripe e-Commerce</em>
+    <em>HTML/CSS, PHP, MySQL, JavaScript/jQuery, Stripe e-Commerce</em>
 </div>

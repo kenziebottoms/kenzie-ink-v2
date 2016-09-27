@@ -159,8 +159,8 @@ a.code {
       border: 0;
       opacity: .4;
       float: right;
-      background-size: 250% auto;
-      background-position: 40% 40%; }
+      background-size: cover;
+      background-position: center; }
       a.code div.code div:hover {
         opacity: .6; }
 
@@ -206,19 +206,19 @@ a.code {
       .feature-wrapper .feature .dragon input[type=number]::-webkit-inner-spin-button,
       .feature-wrapper .feature .dragon input[type=number]::-webkit-outer-spin-button {
         opacity: 1; }
-    .feature-wrapper .feature .resume {
+    .feature-wrapper .feature .resume, .feature-wrapper .feature .resources {
       padding: 1rem 0 3rem 0; }
-      .feature-wrapper .feature .resume h3 {
+      .feature-wrapper .feature .resume h3, .feature-wrapper .feature .resources h3 {
         background: #89C9B2;
         color: #fff;
         text-align: center;
         font-weight: 100;
         font-size: 2rem;
         display: block; }
-      .feature-wrapper .feature .resume h4 span {
+      .feature-wrapper .feature .resume h4 span, .feature-wrapper .feature .resources h4 span {
         font-weight: 100; }
-      .feature-wrapper .feature .resume ul {
-        font-size: 1.3rem; }
+    .feature-wrapper .feature .resources ul {
+      line-height: 1.4; }
     .feature-wrapper .feature .nano-wrapper {
       margin: auto;
       width: 90%;
