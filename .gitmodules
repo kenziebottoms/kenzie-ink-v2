@@ -1,0 +1,3 @@
+[submodule "js/smoothState.js"]
+	path = js/smoothState.js
+	url = https://github.com/miguel-perez/smoothState.js.git
