@@ -8,6 +8,20 @@ permalink:  /kenzie/resources/
 ---
 <div class="resources">
     <h2 class="post-title">Resources</h2>
+    
+    <h3>Coding practice</h3>
+    <ul>
+        <li>
+            <a href="https://projecteuler.net/archives" target="blank">Project Euler</a>, math practice problems
+        </li>
+        <li>
+            <a href="https://www.codewars.com/" target="blank">CodeWars</a>, simple to complex practice problems
+        </li>
+        <li>
+            <a href="http://codekata.com/" target="blank">CodeKata</a>, theoretical practice
+        </li>
+    </ul>
+
     <h3>Fonts</h3>
     <ul>
         <li>
@@ -27,19 +41,6 @@ permalink:  /kenzie/resources/
         </li>
         <li>
             <a href="http://www.losttype.com/" target="blank">LostType</a>, pay-what-you-can font downloads
-        </li>
-    </ul>
-    
-    <h3>Coding practice</h3>
-    <ul>
-        <li>
-            <a href="https://projecteuler.net/archives" target="blank">Project Euler</a>, math practice problems
-        </li>
-        <li>
-            <a href="https://www.codewars.com/" target="blank">CodeWars</a>, simple to complex practice problems
-        </li>
-        <li>
-            <a href="http://codekata.com/" target="blank">CodeKata</a>, theoretical practice
         </li>
     </ul>
     
