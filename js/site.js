@@ -8,6 +8,18 @@ $(document).ready(function(){
             Promise
             .all([this.newContainerLoading, this.fadeOut()])
             .then(this.fadeIn.bind(this));
+            if (window.location.href.indexOf("ink") >= 0) {
+                $(".page-heading").addClass("left");
+                $(".page-heading").removeClass("center");
+                $(".page-heading").removeClass("right");
+            } else if (window.location.href.indexOf("kenzie") >= 0) {
+                $(".page-heading").addClass("right");
+                $(".page-heading").removeClass("center");
+                $(".page-heading").removeClass("left");
+            } else {
+                $(".page-heading").removeClass("left");
+                $(".page-heading").removeClass("right");
+            }
         },
 
         fadeOut: function() {
@@ -28,6 +40,18 @@ $(document).ready(function(){
                 visibility : 'visible',
                 opacity : 0
             });
+            if (window.location.href.indexOf("ink") >= 0) {
+                $(".page-heading").addClass("left");
+                $(".page-heading").removeClass("center");
+                $(".page-heading").removeClass("right");
+            } else if (window.location.href.indexOf("kenzie") >= 0) {
+                $(".page-heading").addClass("right");
+                $(".page-heading").removeClass("center");
+                $(".page-heading").removeClass("left");
+            } else {
+                $(".page-heading").removeClass("left");
+                $(".page-heading").removeClass("right");
+            }
 
             $el.animate({ opacity: 1 }, 400, function() {
                 // Do not forget to call .done() as soon your transition is finished!
@@ -42,7 +66,7 @@ $(document).ready(function(){
     };
 
     init();
-    
+
     Barba.Dispatcher.on("transitionCompleted", function() {
         init();
     });
