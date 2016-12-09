@@ -8,11 +8,11 @@ $(document).ready(function(){
             Promise
             .all([this.newContainerLoading, this.fadeOut()])
             .then(this.fadeIn.bind(this));
-            if (window.location.href.indexOf("ink") >= 0) {
+            if (window.location.pathname.indexOf("ink") >= 0) {
                 $(".page-heading").addClass("left");
                 $(".page-heading").removeClass("center");
                 $(".page-heading").removeClass("right");
-            } else if (window.location.href.indexOf("kenzie") >= 0) {
+            } else if (window.location.pathname.indexOf("kenzie") >= 0) {
                 $(".page-heading").addClass("right");
                 $(".page-heading").removeClass("center");
                 $(".page-heading").removeClass("left");
