@@ -32,10 +32,11 @@ canvas#dragon {
   position: absolute;
   z-index: 300;
   left: 0;
-  top: 56px;
-  transition: .25s;
-  animation-duration: 1s;
-  animation-fill-mode: both; }
+  transition: .75s;
+  top: 103px; }
+  @media screen and (min-width: 960px) {
+    .page-heading {
+      top: 56px; } }
   @media screen and (min-width: 960px) {
     .page-heading.left {
       width: 50%;
@@ -57,10 +58,11 @@ canvas#dragon {
 
 #menu {
   width: 100%;
-  margin-top: -47px;
+  margin-top: 0;
   background: #fff;
   z-index: 300;
   position: absolute;
+  top: 0;
   list-style-type: none;
   font-size: 2.5rem;
   padding-left: 0;
@@ -95,7 +97,10 @@ a.art {
   display: block;
   overflow: hidden;
   height: 300px;
-  margin-top: 160px; }
+  margin-top: 207px; }
+  @media screen and (min-width: 960px) {
+    a.art {
+      margin-top: 160px; } }
   a.art span {
     position: absolute;
     right: 4rem;
@@ -110,7 +115,8 @@ a.art {
   a.art div.art {
     width: 150%;
     height: 300px;
-    background: #89C9B2; }
+    background: #89C9B2;
+    overflow: hidden; }
     a.art div.art span {
       position: absolute;
       z-index: 300;
@@ -156,6 +162,7 @@ a.code {
     position: absolute;
     width: 150%;
     left: -50%;
+    overflow: hidden;
     height: 300px;
     background: #B1ABD4; }
     a.code div.code div {
@@ -181,7 +188,8 @@ a.code {
       margin-bottom: 0; } }
   @media screen and (min-width: 960px) {
     .feature-wrapper.art {
-      position: fixed; } }
+      position: fixed;
+      top: 0; } }
   .feature-wrapper .feature {
     height: auto;
     margin-top: 207px;

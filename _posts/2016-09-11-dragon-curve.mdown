@@ -10,6 +10,5 @@ permalink:  /kenzie/dragon/
     <canvas id="dragon" width="400" height="500"></canvas>
     <br/>Iterations: <input type="number" min="1" max="13" value="9"/>
 </div>
-<script type="text/javascript" src="/js/dragon.js"></script>
 <h2 class="post-title">Dragon curve</h2>
 I've written a program to draw the dragon curve before your eyes three times in Python, once in Racket, and now again in jCanvas.
