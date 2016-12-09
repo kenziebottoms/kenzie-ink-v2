@@ -1,40 +1,56 @@
 $(document).ready(function(){
+    Barba.Pjax.init();
+    Barba.Prefetch.init();
+
+    var FadeTransition = Barba.BaseTransition.extend({
+        start: function() {
+            // This function is automatically called as soon the Transition starts
+            Promise
+            .all([this.newContainerLoading, this.fadeOut()])
+            .then(this.fadeIn.bind(this));
+        },
+
+        fadeOut: function() {
+            // this.oldContainer is the HTMLElement of the old Container
+            return $(this.oldContainer).animate({ opacity: 0 }).promise();
+        },
+
+        fadeIn: function() {
+            // this.newContainer is the HTMLElement of the new Container
+            // At this stage newContainer is on the DOM (inside our #barba-container and with visibility: hidden)
+            // Please note, newContainer is available just after newContainerLoading is resolved!
+            var _this = this;
+            var $el = $(this.newContainer);
+
+            $(this.oldContainer).hide();
+
+            $el.css({
+                visibility : 'visible',
+                opacity : 0
+            });
+
+            $el.animate({ opacity: 1 }, 400, function() {
+                // Do not forget to call .done() as soon your transition is finished!
+                // .done() will automatically remove from the DOM the old Container
+                _this.done();
+            });
+        }
+    });
+
+    Barba.Pjax.getTransition = function() {
+        return FadeTransition;
+    };
 
     init();
-
-    // SmoothState
-    'use strict';
     
-    var options = {
-        prefetch: true,
-        cacheLength: 2,
-        onBefore: function($trigger, $container) {
-        },
-        onStart: {
-            duration: 250,
-            render: function ($container) {
-                // Add your CSS animation reversing class
-                $container.addClass('is-exiting');
-                // Restart your animation
-                smoothState.restartCSSAnimations();
-            }
-        },
-        onReady: {
-            duration: 0,
-            render: function ($container, $newContent) {
-                // Remove your CSS animation reversing class
-                $container.removeClass('is-exiting');
-                $('.active').removeClass('active');
-                // Inject the new content
-                $container.html($newContent);
-                init();
-            }
-        }
-    },
-    smoothState = $("#wrapper").smoothState(options).data('smoothState');
+    Barba.Dispatcher.on("transitionCompleted", function() {
+        init();
+    });
+
 }); 
 
 function init() {
+    console.log("init");
     initGallery();
     if (window.location.href.indexOf("dragon") >= 0) {
         initDragon();

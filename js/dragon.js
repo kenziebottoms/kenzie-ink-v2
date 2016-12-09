@@ -2,7 +2,7 @@ function initDragon() {
     // play triangle
     $('#dragon').drawPolygon({
         fillStyle: '#333',
-        x: 285, y: 235,
+        x: 215, y: 235,
         radius: 60,
         sides: 3,
         rotate: 90
@@ -36,7 +36,7 @@ function initDragon() {
         return arr2;
     }
     function plot(arr, interval) {
-        var location = [380, 120];
+        var location = [220, 120];
         var pts = [[location[0],location[1]+interval], location];
 
         // N=0, E=1, S=2, W=3

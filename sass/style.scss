@@ -23,9 +23,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $font;
     font-weight: bold;
 }
-canvas {
+canvas#dragon {
     height: 500px;
-    width: 600px;
+    width: 400px;
     background: $white;
     margin: 50px 0;
 }
@@ -45,21 +45,21 @@ canvas {
     animation-duration: 1s;
     animation-fill-mode: both;
     &.left {
-        @media screen and (min-width:1420px) {        
+        @media screen and (min-width:960px) {        
             width: 50%;
             left: 0;
             position: fixed;
         }
     }
     &.right {
-        @media screen and (min-width:1420px) {        
+        @media screen and (min-width:960px) {        
             width: 50%;
             left: 50%;
             position: fixed;
         }
     }
     &.center {
-        @media screen and (min-width:1420px) {   
+        @media screen and (min-width:960px) {   
             width: 100%;
             left: 0;
         }
@@ -74,7 +74,7 @@ canvas {
 #menu {
     width: 100%;
     margin-top: -47px;
-    @media screen and (min-width:1420px) {
+    @media screen and (min-width:960px) {
         width: 50%;
         margin-top: 113px;
     }
@@ -93,7 +93,7 @@ canvas {
         background: transparent;
     }
     &.art {
-        @media screen and (min-width:1420px) {
+        @media screen and (min-width:960px) {
             left: 50%;
         }
         background: $teal;
@@ -125,9 +125,13 @@ a.art {
         color: $white;
         font-weight: 100;
         padding-top: 1.8rem;
+        transition: .25s;
+    }
+    &:hover span {
+        color: $purple;
     }
     div.art {
-        width: 120%;
+        width: 150%;
         height: 300px;
         background: $teal;
     span {
@@ -150,7 +154,7 @@ a.art {
         div {
             height: 300px;
             transition: .25s;
-            width: 15%;
+            width: 300px;
             border: 0;
             opacity: .4;
             float: left;
@@ -175,17 +179,22 @@ a.code {
         font-weight: 100;
         padding-top: 1.8rem;
         padding-left: 4rem;
+        transition: .25s;
+
+    }
+    &:hover span {
+        color: $teal;
     }
     div.code {
         position: absolute;
-        width: 120%;
-        left: -20%;
+        width: 150%;
+        left: -50%;
         height: 300px;
         background: $purple;
         div {
             height: 300px;
             transition: .25s;
-            width: 15%;
+            width: 300px;
             border: 0;
             opacity: .4;
             float: right;
@@ -201,24 +210,24 @@ a.code {
     width: 100%;
     position: static;
     margin-bottom: 3rem;
-    @media screen and (min-width:1420px) {
+    @media screen and (min-width:960px) {
         width: 50%;
         position: absolute;
         margin-bottom: 0;
     }
     &.art {
-        @media screen and (min-width:1420px) {
+        @media screen and (min-width:960px) {
             position: fixed;
         }
     }
     .feature {
         height: auto;
         margin-top: 207px;
-        @media screen and (min-width:1420px) {
+        @media screen and (min-width:960px) {
             margin-top: 160px;
             height: 600px;
         }
-        background-size: auto 100%;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
         &.art {
@@ -347,7 +356,7 @@ a.code {
 .ribbon {
     position: static;
     width: 100%;
-    @media screen and (min-width:1420px) {
+    @media screen and (min-width:960px) {
         width: 50%;
         position: absolute;
         &.code {
@@ -358,14 +367,26 @@ a.code {
     top: 160px;
     &.art a div {
         height: 200px;
-        width: 25%;
+        width: 33.3333%;
+        @media screen and (min-width:700px) and (max-width:960px) {
+            width: 25%;
+        }
+        @media screen and (min-width:1200px) {
+            width: 25%;
+        }
         float: left;
         background-size: 250% auto;
         background-position: 40% 40%;
     }
     &.code a div {
         height: 200px;
-        width: 25%;
+        width: 33.3333%;
+        @media screen and (min-width:700px) and (max-width:960px) {
+            width: 25%;
+        }
+        @media screen and (min-width:1200px) {
+            width: 25%;
+        }
         float: left;
         background-position: center;
         background-size: cover;

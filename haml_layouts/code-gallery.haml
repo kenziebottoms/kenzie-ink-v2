@@ -2,11 +2,12 @@
 %html
     {% include header.html %}
     %body
-        %div#wrapper
-            %h1.page-heading.right
-                {% include title.html %}
-            {% include code-menu.html %}
-            %div.feature-wrapper.code
-                %div.code.feature
-                    {{ content }}
-            {% include code-ribbon.html %}
+        %div#barba-wrapper
+            %div.barba-container
+                %h1.page-heading.right
+                    {% include title.html %}
+                {% include code-menu.html %}
+                %div.feature-wrapper.code
+                    %div.code.feature
+                        {{ content }}
+                {% include code-ribbon.html %}

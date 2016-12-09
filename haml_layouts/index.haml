@@ -2,20 +2,21 @@
 %html
     {% include header.html %}
     %body
-        %div#wrapper
-            %h1.page-heading.center
-                {% include title.html %}
-            %a.art(href="/ink")
-                %span
-                    &rsaquo;
-                %div.art
-                    {% for post in site.categories.art limit:6 %}
-                         %div(style="background-image:url({{ post.imgsrc }})")
-                    {% endfor %}
-            %a.code(href="/kenzie")
-                %span
-                    &lsaquo;
-                %div.code
-                    {% for post in site.categories.code limit: 6 %}
-                         %div(style="background-image:url({{ post.imgsrc }})")
-                    {% endfor %}
+        %div#barba-wrapper
+            %div.barba-container
+                %h1.page-heading.center
+                    {% include title.html %}
+                %a.art(href="/ink")
+                    %span
+                        &rsaquo;
+                    %div.art
+                        {% for post in site.categories.art limit:6 %}
+                             %div(style="background-image:url({{ post.imgsrc }})")
+                        {% endfor %}
+                %a.code(href="/kenzie")
+                    %span
+                        &lsaquo;
+                    %div.code
+                        {% for post in site.categories.code limit: 6 %}
+                             %div(style="background-image:url({{ post.imgsrc }})")
+                        {% endfor %}
