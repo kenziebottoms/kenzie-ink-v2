@@ -3,5 +3,5 @@ layout:     post
 title:      "Seapunk shark"
 date:       2015-06-24
 categories: art
-imgsrc:     http://66.media.tumblr.com/5adeb5a5e7d25948385984bee12e9c6b/tumblr_nqh8yoza6f1tw0twyo1_1280.png
+imgsrc:     http://i.imgur.com/eCW1wJ8h.png
 ---

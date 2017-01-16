@@ -1,0 +1,7 @@
+---
+layout:     post
+title:      "Baze meditates"
+date:       2016-12-31
+categories: art
+imgsrc:     http://i.imgur.com/fpL6D6Wh.jpg
+---
