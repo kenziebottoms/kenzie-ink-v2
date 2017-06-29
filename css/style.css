@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   margin-top: 0;
   background: #fff;
-  z-index: 300;
+  z-index: 350;
   list-style-type: none;
   padding-left: 0;
   text-align: center;
