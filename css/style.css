@@ -15,42 +15,37 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold; }
 
-canvas#dragon {
-  height: 500px;
-  width: 400px;
-  background: #fff;
-  margin: 50px 0; }
-
 .clearfix {
   clear: both; }
 
 .page-heading {
   margin: 0 auto;
   text-align: center;
-  font-size: 7rem;
+  font-size: 3.3rem;
   width: 100%;
-  position: absolute;
-  z-index: 300;
-  left: 0;
-  transition: .75s;
-  top: 103px; }
+  transition: .75s; }
+  @media screen and (min-width: 600px) {
+    .page-heading {
+      font-size: 5rem; } }
   @media screen and (min-width: 960px) {
     .page-heading {
-      top: 56px; } }
-  @media screen and (min-width: 960px) {
-    .page-heading.left {
-      width: 50%;
-      left: 0;
-      position: fixed; } }
-  @media screen and (min-width: 960px) {
-    .page-heading.right {
-      width: 50%;
-      left: 50%;
-      position: fixed; } }
-  @media screen and (min-width: 960px) {
-    .page-heading.center {
+      z-index: 300;
+      font-size: 7rem;
+      position: fixed;
       width: 100%;
-      left: 0; } }
+      top: 0;
+      left: 0; }
+      .page-heading.left {
+        width: 50%;
+        left: 0;
+        position: fixed; }
+      .page-heading.right {
+        width: 50%;
+        left: 50%;
+        position: fixed; }
+      .page-heading.center {
+        width: 100%;
+        left: 0; } }
   .page-heading a {
     background: transparent; }
   .page-heading span {
@@ -61,16 +56,16 @@ canvas#dragon {
   margin-top: 0;
   background: #fff;
   z-index: 300;
-  position: absolute;
-  top: 0;
   list-style-type: none;
-  font-size: 2.5rem;
   padding-left: 0;
-  text-align: center; }
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 0; }
   @media screen and (min-width: 960px) {
     #menu {
       width: 50%;
-      margin-top: 113px; } }
+      margin-top: 103px;
+      font-size: 1.7rem; } }
   #menu li {
     display: inline-block;
     margin: 0 20px; }
@@ -78,9 +73,6 @@ canvas#dragon {
     background: transparent; }
   #menu.art {
     background: #89C9B2; }
-    @media screen and (min-width: 960px) {
-      #menu.art {
-        left: 50%; } }
   #menu.code {
     background: #B1ABD4; }
 
@@ -96,49 +88,52 @@ a.art {
   text-decoration: none;
   display: block;
   overflow: hidden;
-  height: 300px;
-  margin-top: 207px; }
-  @media screen and (min-width: 960px) {
+  height: 100px;
+  margin-bottom: 1rem; }
+  @media screen and (min-width: 600px) {
     a.art {
-      margin-top: 160px; } }
+      height: 200px;
+      margin-top: 103px; } }
   a.art span {
     position: absolute;
-    right: 4rem;
     z-index: 300;
-    font-size: 12rem;
+    font-size: 5rem;
     color: #fff;
     font-weight: 100;
-    padding-top: 1.8rem;
-    transition: .25s; }
+    transition: .25s;
+    right: 0rem; }
+    @media screen and (min-width: 960px) {
+      a.art span {
+        font-size: 10rem;
+        right: 3rem; } }
   a.art:hover span {
     color: #B1ABD4; }
   a.art div.art {
     width: 150%;
-    height: 300px;
+    height: 100px;
     background: #89C9B2;
     overflow: hidden; }
-    a.art div.art span {
-      position: absolute;
-      z-index: 300;
-      font-size: 12rem;
-      color: #fff;
-      font-weight: 100;
-      padding-top: 1.8rem;
-      padding-left: 4rem; }
+    @media screen and (min-width: 600px) {
+      a.art div.art {
+        height: 200px; } }
     a.art div.art:hover span.title {
       left: 40%; }
     a.art div.art span.title {
       left: 50%;
       font-weight: 700; }
     a.art div.art div {
-      height: 300px;
+      height: 100px;
+      width: 100px;
       transition: .25s;
-      width: 300px;
       border: 0;
       opacity: .4;
       float: left;
       background-size: 250% auto;
       background-position: 40% 40%; }
+      @media screen and (min-width: 600px) {
+        a.art div.art div {
+          height: 200px;
+          width: 200px; } }
       a.art div.art div:hover {
         opacity: .6; }
 
@@ -146,16 +141,21 @@ a.code {
   text-decoration: none;
   display: block;
   overflow: hidden;
-  height: 300px; }
+  height: 100px; }
+  @media screen and (min-width: 600px) {
+    a.code {
+      height: 200px; } }
   a.code span {
     position: absolute;
     z-index: 300;
-    font-size: 12rem;
+    font-size: 5rem;
     color: #fff;
     font-weight: 100;
-    padding-top: 1.8rem;
-    padding-left: 4rem;
     transition: .25s; }
+    @media screen and (min-width: 960px) {
+      a.code span {
+        font-size: 10rem;
+        padding-left: 3rem; } }
   a.code:hover span {
     color: #89C9B2; }
   a.code div.code {
@@ -163,53 +163,62 @@ a.code {
     width: 150%;
     left: -50%;
     overflow: hidden;
-    height: 300px;
+    height: 100px;
     background: #B1ABD4; }
+    @media screen and (min-width: 600px) {
+      a.code div.code {
+        height: 200px; } }
     a.code div.code div {
-      height: 300px;
+      height: 100px;
       transition: .25s;
-      width: 300px;
+      width: 100px;
       border: 0;
       opacity: .4;
       float: right;
       background-size: cover;
       background-position: center; }
+      @media screen and (min-width: 600px) {
+        a.code div.code div {
+          height: 200px;
+          width: 200px; } }
       a.code div.code div:hover {
         opacity: .6; }
 
 .feature-wrapper {
   width: 100%;
-  position: static;
-  margin-bottom: 3rem; }
+  position: static; }
   @media screen and (min-width: 960px) {
     .feature-wrapper {
       width: 50%;
       position: absolute;
-      margin-bottom: 0; } }
-  @media screen and (min-width: 960px) {
-    .feature-wrapper.art {
-      position: fixed;
-      top: 0; } }
+      margin-bottom: 0; }
+      .feature-wrapper.art {
+        position: fixed; } }
   .feature-wrapper .feature {
     height: auto;
-    margin-top: 207px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; }
     @media screen and (min-width: 960px) {
       .feature-wrapper .feature {
-        margin-top: 160px;
         height: 600px; } }
-    .feature-wrapper .feature.art {
-      height: 600px; }
     .feature-wrapper .feature.code {
-      padding: 0 50px; }
+      padding: 0 15px;
+      font-size: 1rem;
+      margin-bottom: 2rem; }
+    .feature-wrapper .feature.art {
+      height: 300px; }
+    @media screen and (min-width: 960px) {
+      .feature-wrapper .feature.code {
+        padding: 0 50px; } }
     .feature-wrapper .feature h2 {
       display: none; }
     .feature-wrapper .feature h2.post-title {
       display: block; }
-    .feature-wrapper .feature #dragon {
-      margin: 0; }
+    .feature-wrapper .feature canvas#dragon {
+      height: 300px;
+      width: 400px;
+      background: #fff; }
     .feature-wrapper .feature .dragon {
       text-align: center;
       font-size: 2rem; }
@@ -221,14 +230,18 @@ a.code {
       .feature-wrapper .feature .dragon input[type=number]::-webkit-outer-spin-button {
         opacity: 1; }
     .feature-wrapper .feature .resume, .feature-wrapper .feature .resources {
-      padding: 1rem 0 3rem 0; }
+      padding: 1rem 0 3rem 0;
+      font-size: 1rem; }
       .feature-wrapper .feature .resume h3, .feature-wrapper .feature .resources h3 {
         background: #89C9B2;
         color: #fff;
         text-align: center;
         font-weight: 100;
-        font-size: 2rem;
-        display: block; }
+        display: block;
+        font-size: 1.3rem; }
+        @media screen and (min-width: 960px) {
+          .feature-wrapper .feature .resume h3, .feature-wrapper .feature .resources h3 {
+            font-size: 2rem; } }
       .feature-wrapper .feature .resume h4 span, .feature-wrapper .feature .resources h4 span {
         font-weight: 100; }
     .feature-wrapper .feature .resources ul {
@@ -236,8 +249,10 @@ a.code {
     .feature-wrapper .feature .nano-wrapper {
       margin: auto;
       width: 90%;
-      font-size: 2rem;
       text-align: center; }
+      @media screen and (min-width: 960px) {
+        .feature-wrapper .feature .nano-wrapper {
+          font-size: 1rem; } }
       .feature-wrapper .feature .nano-wrapper input[type=number] {
         font: inherit;
         padding: 2px 2px 2px 10px;
@@ -249,10 +264,15 @@ a.code {
       .feature-wrapper .feature .nano-wrapper textarea#nano {
         padding: 0;
         width: 100%;
-        font-size: 1.2rem;
         font-weight: 100;
         font-family: "Roboto Mono", monospace;
         border: none; }
+        @media screen and (min-width: 960px) {
+          .feature-wrapper .feature .nano-wrapper textarea#nano {
+            font-size: 1.2rem; } }
+        @media screen and (max-width: 600px) {
+          .feature-wrapper .feature .nano-wrapper textarea#nano {
+            height: 200px; } }
       .feature-wrapper .feature .nano-wrapper #progress-wrapper {
         width: 100%;
         margin: auto; }
@@ -261,35 +281,46 @@ a.code {
           height: 8px;
           background: #B1ABD4; }
   .feature-wrapper.art p {
-    width: 80%;
-    margin: 20px auto;
-    text-align: center; }
+    margin: 20px;
+    text-align: center;
+    font-size: 1rem; }
+    @media screen and (min-width: 960px) {
+      .feature-wrapper.art p {
+        width: 80%;
+        margin: 20px auto; } }
     .feature-wrapper.art p span {
       font-weight: 700; }
-  .feature-wrapper .code.graphs {
-    padding: 3rem; }
-    .feature-wrapper .code.graphs > div {
-      margin: 1rem 0;
-      font-size: 2rem; }
-      .feature-wrapper .code.graphs > div > div {
-        text-align: center;
-        color: #fff;
-        background: #89C9B2; }
-        .feature-wrapper .code.graphs > div > div.bar1 {
-          width: 20%;
-          opacity: .2; }
-        .feature-wrapper .code.graphs > div > div.bar2 {
-          width: 40%;
-          opacity: .4; }
-        .feature-wrapper .code.graphs > div > div.bar3 {
-          width: 60%;
-          opacity: .6; }
-        .feature-wrapper .code.graphs > div > div.bar4 {
-          width: 80%;
-          opacity: .8; }
-        .feature-wrapper .code.graphs > div > div.bar5 {
-          width: 100%;
-          opacity: 1; }
+  @media screen and (min-width: 960px) {
+    .feature-wrapper .code.graphs {
+      padding: 3rem; } }
+  .feature-wrapper .code.graphs > div {
+    margin: .5rem 0;
+    font-size: 1.2rem; }
+    @media screen and (min-width: 960px) {
+      .feature-wrapper .code.graphs > div {
+        margin: 1rem 0; } }
+    @media screen and (min-width: 960px) {
+      .feature-wrapper .code.graphs > div {
+        font-size: 2rem; } }
+    .feature-wrapper .code.graphs > div > div {
+      text-align: center;
+      color: #fff;
+      background: #89C9B2; }
+      .feature-wrapper .code.graphs > div > div.bar1 {
+        width: 20%;
+        opacity: .2; }
+      .feature-wrapper .code.graphs > div > div.bar2 {
+        width: 40%;
+        opacity: .4; }
+      .feature-wrapper .code.graphs > div > div.bar3 {
+        width: 60%;
+        opacity: .6; }
+      .feature-wrapper .code.graphs > div > div.bar4 {
+        width: 80%;
+        opacity: .8; }
+      .feature-wrapper .code.graphs > div > div.bar5 {
+        width: 100%;
+        opacity: 1; }
 
 .ribbon {
   position: static;
@@ -299,30 +330,30 @@ a.code {
   @media screen and (min-width: 960px) {
     .ribbon {
       width: 50%;
-      position: absolute; }
-      .ribbon.code {
-        position: fixed; } }
+      margin-left: 50%; } }
   .ribbon.art a div {
-    height: 200px;
-    width: 33.3333%;
+    width: 50%;
+    height: 150px;
     float: left;
     background-size: 250% auto;
     background-position: 40% 40%; }
-    @media screen and (min-width: 700px) and (max-width: 960px) {
+    @media screen and (min-width: 600px) {
       .ribbon.art a div {
-        width: 25%; } }
+        height: 200px;
+        width: 33.3333%; } }
     @media screen and (min-width: 1200px) {
       .ribbon.art a div {
         width: 25%; } }
   .ribbon.code a div {
-    height: 200px;
-    width: 33.3333%;
+    width: 50%;
+    height: 150px;
     float: left;
     background-position: center;
     background-size: cover; }
-    @media screen and (min-width: 700px) and (max-width: 960px) {
+    @media screen and (min-width: 600px) {
       .ribbon.code a div {
-        width: 25%; } }
+        height: 200px;
+        width: 33.3333%; } }
     @media screen and (min-width: 1200px) {
       .ribbon.code a div {
         width: 25%; } }

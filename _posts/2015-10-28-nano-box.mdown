@@ -7,7 +7,7 @@ imgsrc:     http://i.imgur.com/I3EuQQu.png
 permalink:  /kenzie/nanobox/
 ---
 <div class="nano-wrapper">
-	<textarea id="nano" rows="16" placeholder="Set a goal and roll."></textarea>
+	<textarea id="nano" rows="12" placeholder="Set a goal and roll."></textarea>
 	<div id="progress-wrapper">
 		<div id="progress-bar"></div>	
 	</div>
