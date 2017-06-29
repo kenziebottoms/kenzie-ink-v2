@@ -80,7 +80,8 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
     @media screen and (min-width: $break-large) {
         width: 50%;
-        margin-top: 103px;
+        position: absolute;
+        top: 103px;
         font-size: 1.7rem;
     }
     li {
@@ -227,6 +228,7 @@ a.code {
         width: 50%;
         position: absolute;
         margin-bottom: 0;
+        top: 135px;
         &.art {
             position: fixed;
         }
@@ -402,7 +404,7 @@ a.code {
         margin-left: 50%;
     }
     left: 50%;
-    top: 160px;
+    margin-top: 135px;
     &.art a div {
         width: 50%;
         height: 150px;

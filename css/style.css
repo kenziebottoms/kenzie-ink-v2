@@ -64,7 +64,8 @@ h1, h2, h3, h4, h5, h6 {
   @media screen and (min-width: 960px) {
     #menu {
       width: 50%;
-      margin-top: 103px;
+      position: absolute;
+      top: 103px;
       font-size: 1.7rem; } }
   #menu li {
     display: inline-block;
@@ -191,7 +192,8 @@ a.code {
     .feature-wrapper {
       width: 50%;
       position: absolute;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      top: 135px; }
       .feature-wrapper.art {
         position: fixed; } }
   .feature-wrapper .feature {
@@ -326,7 +328,7 @@ a.code {
   position: static;
   width: 100%;
   left: 50%;
-  top: 160px; }
+  margin-top: 135px; }
   @media screen and (min-width: 960px) {
     .ribbon {
       width: 50%;
