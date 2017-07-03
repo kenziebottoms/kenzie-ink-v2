@@ -1,0 +1,11 @@
+---
+layout:     code-gallery
+title:      "Make Nashville Website"
+date:       2017-06-01
+categories: code
+imgsrc:     http://i.imgur.com/B8ALVK4.png
+permalink:  /kenzie/mn/
+---
+<h3>Make Nashville website</h3>
+<p>I designed and built <a href="https://github.com/kenziebottoms/makenashville" target="blank">a custom, responsive FoundationPress theme</a> for <a href="http://makenashville.org" target="blank">Make Nashville</a>, a local organization dedicated to providing creative resources and space to makers of all kinds, and am currently in the process of rebranding existing materials to match the site more closely.</p>
+<p><big><a href="http://makenashville.org" target="blank">Take a look!</a></big></p>
