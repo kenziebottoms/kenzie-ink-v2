@@ -1,0 +1,7 @@
+---
+layout:     post
+title:      "Candroid"
+date:       2016-02-18
+categories: art
+imgsrc:     http://i.imgur.com/HbpTu5s.jpg
+---

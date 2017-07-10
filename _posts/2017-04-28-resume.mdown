@@ -1,16 +1,24 @@
 ---
 layout:     code-gallery
 title:      "Resum&eacute;"
-date:       2016-09-26
+date:       2017-04-28
 categories: code
 imgsrc:     http://i.imgur.com/R3gEiev.png
 permalink:  /kenzie/resume/
 ---
 <div class="resume">
     <h2 class="post-title">Resum&eacute;</h2>
+    <h3>IASIS Healthcare</h3>
+    <p class="date">
+        <strong>June 2017 &ndash; present</strong> freelance developer
+    </p>
+    <ul>
+        <li>Repair and optimization of existing websites</li>
+    </ul>
+    <em>WordPress, PHP, HTML, CSS</em>
     <h3>G/O Digital</h3>
     <p class="date">
-        <strong>Sep 2016 &ndash; present</strong> Maintenance specialist
+        <strong>Sep 2016 &ndash; April 2017</strong> Maintenance specialist
         <br/>
         <strong>Jan 2016 &ndash; Aug 2016</strong> Web dev associate
     </p>

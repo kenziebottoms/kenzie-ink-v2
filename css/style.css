@@ -197,13 +197,9 @@ a.code {
       .feature-wrapper.art {
         position: fixed; } }
   .feature-wrapper .feature {
-    height: auto;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; }
-    @media screen and (min-width: 960px) {
-      .feature-wrapper .feature {
-        height: 600px; } }
     .feature-wrapper .feature.code {
       padding: 0 15px;
       font-size: 1rem;
@@ -211,6 +207,8 @@ a.code {
     .feature-wrapper .feature.art {
       height: 300px; }
     @media screen and (min-width: 960px) {
+      .feature-wrapper .feature.art, .feature-wrapper .feature.code {
+        height: 500px; }
       .feature-wrapper .feature.code {
         padding: 0 50px; } }
     .feature-wrapper .feature h2 {
@@ -233,7 +231,7 @@ a.code {
         opacity: 1; }
     .feature-wrapper .feature .resume, .feature-wrapper .feature .resources {
       padding: 1rem 0 3rem 0;
-      font-size: 1rem; }
+      font-size: 1.2rem; }
       .feature-wrapper .feature .resume h3, .feature-wrapper .feature .resources h3 {
         background: #89C9B2;
         color: #fff;
