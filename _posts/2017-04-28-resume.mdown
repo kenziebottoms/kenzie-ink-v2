@@ -8,12 +8,21 @@ permalink:  /kenzie/resume/
 ---
 <div class="resume">
     <h2 class="post-title">Resum&eacute;</h2>
+    <h3>Nashville Software School</h3>
+    <p class="date">
+        <strong>November 2017 &ndash; May 2018</strong> Full-Time Web Development Bootcamp Cohort 23
+    </p>
+    <ul>
+        <li>Full-stack development with Node.js</li>
+    </ul>
+    <em>HTML, SCSS/CSS, Javascript/jQuery, Angular, Node.js</em>
     <h3>IASIS Healthcare</h3>
     <p class="date">
-        <strong>June 2017 &ndash; present</strong> freelance developer
+        <strong>June 2017 &ndash; September 2017</strong> freelance developer
     </p>
     <ul>
         <li>Repair and optimization of existing websites</li>
+        <li>Design and implementation of landing pages</li>
     </ul>
     <em>WordPress, PHP, HTML, CSS</em>
     <h3>G/O Digital</h3>
