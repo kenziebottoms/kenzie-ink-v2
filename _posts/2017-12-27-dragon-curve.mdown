@@ -1,0 +1,11 @@
+---
+layout:     code-gallery
+title:      "Dragon curve"
+date:       2017-12-27
+categories: code
+imgsrc:     http://i.imgur.com/hNMvibo.png
+permalink:  /kenzie/dragon/
+---
+<p>
+    <p data-height="500" data-theme-id="dark" data-slug-hash="EoWaaB" data-default-tab="result" data-user="kenziebottoms" data-embed-version="2" data-pen-title="Dragon curve" class="codepen">See the Pen <a href="https://codepen.io/kenziebottoms/pen/EoWaaB/">Dragon curve</a> by Kenzie Bottoms (<a href="https://codepen.io/kenziebottoms">@kenziebottoms</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+</p>
