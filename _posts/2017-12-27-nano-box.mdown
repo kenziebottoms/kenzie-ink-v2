@@ -1,0 +1,11 @@
+---
+layout:     code-gallery
+title:      "Nano box"
+date:       2017-12-27
+categories: code
+imgsrc:     http://i.imgur.com/I3EuQQu.png
+permalink:  /kenzie/nanobox/
+---
+<p>
+	<p data-height="500" data-theme-id="dark" data-slug-hash="dJvMag" data-default-tab="result" data-user="kenziebottoms" data-embed-version="2" data-pen-title="Nano Box" class="codepen">See the Pen <a href="https://codepen.io/kenziebottoms/pen/dJvMag/">Nano Box</a> by Kenzie Bottoms (<a href="https://codepen.io/kenziebottoms">@kenziebottoms</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+</p>

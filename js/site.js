@@ -63,11 +63,12 @@ $(document).ready(function(){
 
 function init() {
     initGallery();
+    // code pens
     if (window.location.href.indexOf("dragon") >= 0) {
         $.getScript('https://production-assets.codepen.io/assets/embed/ei.js');
     }
     if (window.location.href.indexOf("nanobox") >= 0) {
-        initNano();
+        $.getScript('https://production-assets.codepen.io/assets/embed/ei.js');
     }
 }
 
@@ -77,11 +78,5 @@ function initGallery() {
         $a = $(this);
         $('.feature').css('background-image', $a.children('div').css('background-image'));
         $('.feature-wrapper p').html('<span>'+$a.attr('date')+'</span> '+$a.attr('title'));
-    });
-}
-function initNano() {
-    $("textarea#nano").on("change keyup paste", function() {
-        var wordCount = $(this).val().split(' ').length;
-        $("#progress-bar").width(wordCount/$('input#goal').val()*$('#progress-wrapper').width());
     });
 }
